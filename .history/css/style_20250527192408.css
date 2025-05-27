@@ -1,0 +1,51 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  background-color: #ffffff;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  border: 1px solid #4f4f4f;
+}
+
+.navbar{
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #4f4f4f;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.navbar ul #logo {
+  width: 7em;
+  height: 1.75em;
+}
+
+.navbar button {
+  border-radius: 0.75em;
+  color: #13183f;
+  width: 7.4em;
+  height: 1.5em;
+  
+}
+
+.hero-section{
+  border: 1px solid #4f4f4f;
+  
+}

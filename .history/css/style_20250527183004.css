@@ -1,0 +1,30 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.content-container {
+  display: flex;
+  background-color: #f9f9f9;
+  width: 1440px;
+  height: 754px;
+  justify-content: center;
+  border: 1px solid #4f4f4f;
+}
+
+/* .navbar{
+  
+} */
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.navbar button {
+  border-radius: 0.75rem;
+  color: #13183f;
+  width: 10.4rem;
+  height: 3.5rem;
+}
