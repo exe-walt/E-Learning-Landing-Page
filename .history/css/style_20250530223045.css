@@ -60,7 +60,7 @@ body {
   z-index: 10;
 }
 
-.navbar-btn button:hover {
+.navbar-btn button:hover{
   cursor: pointer;
   background: #666ca3;
 }
@@ -92,18 +92,20 @@ body {
   top: -21.6%;
   right: -73%;
   z-index: 1;
+  
 }
 
 .intro-text {
   margin-top: 11.5rem;
 }
 
-.intro-text .head {
+.intro-text .head{
   font-size: 1.6rem;
   line-height: 1.2;
   color: #13183f;
   font-weight: bolder;
 }
+
 
 .main-text {
   font-weight: 400; /* Medium */
@@ -135,6 +137,7 @@ body {
     linear-gradient(to bottom right, #ff6f48, #f02aa6);
 }
 
+
 .cc {
   display: grid;
   gap: 50px 25px;
@@ -142,8 +145,7 @@ body {
   margin-top: 12rem;
 }
 
-.card,
-.main-left {
+.card, .main-left {
   min-height: 300px;
 }
 
@@ -187,7 +189,7 @@ body {
   color: #83869a;
   font-size: 1rem;
   flex-grow: 1;
-  font-weight: 500;
+  font-weight: 500;;
 }
 
 .card a {
@@ -205,6 +207,7 @@ body {
   background-color: #13183f;
   margin-top: 5.5rem;
   width: 100%;
+
 }
 
 .footer ul {
@@ -240,7 +243,7 @@ body {
     linear-gradient(to bottom right, #4851ff, #f02aa6);
 }
 
-.footer-info {
+.footer-info{
   padding: 18px;
   display: flex;
   flex-wrap: wrap;
@@ -251,115 +254,118 @@ body {
   margin: 0 auto;
 }
 
+
+
+
 /* === MOBILE PHONES (max-width: 600px) === */
 @media (max-width: 600px) {
-  /* Navbar */
-  .navbar ul,
-  .footer ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  /* Hero Section */
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 3rem;
-  }
-
-  .hero-text {
-    margin-top: 1rem;
-    padding: 0 1rem;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .main-image {
-    transform: none;
-    text-align: center;
-  }
-
-  .img1 {
-    width: 90%;
-    transform: none;
-    margin-top: 2rem;
-  }
-
-  .overlay-rectangle {
-    display: none;
-  }
-
-  /* Course Cards */
-  .cc {
-    grid-template-columns: 1fr;
-    margin-top: 4rem;
-  }
-
-  .main-left h2 {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-  }
-
-  /* Footer */
-  .footer ul {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
+/* Navbar */
+.navbar ul, .footer ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-/* === TABLETS (601px to 992px) === */
+/* Hero Section */
+.hero-section {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.hero-text {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+}
+
+.main-image {
+  transform: none;
+  text-align: center;
+}
+
+.img1 {
+  width: 90%;
+  transform: none;
+  margin-top: 2rem;
+}
+
+.overlay-rectangle {
+  display: none;
+}
+
+/* Course Cards */
+.cc {
+  grid-template-columns: 1fr;
+  margin-top: 4rem;
+}
+
+.main-left h2 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Footer */
+.footer ul {
+  flex-direction: column;
+  gap: 1.2rem;
+}
+}
+
+  /* === TABLETS (601px to 992px) === */
 @media (min-width: 601px) and (max-width: 992px) {
   .hero-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-text {
-    text-align: center;
-    margin-top: 3rem;
-  }
-
-  .img1 {
-    width: 90%;
-    transform: none;
-    margin-top: 2rem;
-  }
-
-  .overlay-rectangle {
-    display: none;
-  }
-
-  .cc {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-  }
-
-  .navbar ul,
-  .footer ul {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  flex-direction: column;
+  align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
-  .overlay-rectangle {
-    width: 100%;
-    height: 120%;
-    top: -20%;
-    right: -50%;
-    z-index: 1;
-  }
-  .img1 {
-    width: 100%;
-    transform: translate(15%, 60px);
-    z-index: 2;
-  }
+.hero-text {
+  text-align: center;
+  margin-top: 3rem;
 }
+
+.img1 {
+  width: 90%;
+  transform: none;
+  margin-top: 2rem;
+}
+
+.overlay-rectangle {
+  display: none;
+}
+
+.cc {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+  .navbar ul, .footer ul {
+  flex-direction: row;
+  justify-content: space-between;
+}
+}
+  
+
+@media screen and (max-width:1024px){
+.overlay-rectangle{
+  width:100%;
+  height:120%;
+  top:-20%;
+  right:-50%;
+  z-index:1;
+}
+.img1{
+  width:100%;
+  transform:translate(15%,60px);
+  z-index:2;
+}
+}
+  

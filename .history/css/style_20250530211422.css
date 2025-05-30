@@ -19,7 +19,7 @@ body {
 }
 
 .content-container {
-  max-width: 75rem;
+  max-width: 75em;
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 2.5em;
   z-index: 10;
 }
 
@@ -50,17 +50,17 @@ body {
 .navbar-btn button {
   background: #13183f;
   color: white;
-  width: 10.4rem;
-  height: 3.3rem;
-  border-radius: 1.8rem;
+  width: 10.4em;
+  height: 3.3em;
+  border-radius: 1.8em;
   border: none;
   padding: 0.6rem 1.5rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1em;
   z-index: 10;
 }
 
-.navbar-btn button:hover {
+.navbar-btn button:hover{
   cursor: pointer;
   background: #666ca3;
 }
@@ -69,9 +69,6 @@ body {
   display: flex;
 }
 
-.hero-section h1 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Scales between 1.5rem and 2.5rem */
-}
 
 .main-image {
   position: relative;
@@ -92,18 +89,20 @@ body {
   top: -21.6%;
   right: -73%;
   z-index: 1;
+  
 }
 
 .intro-text {
-  margin-top: 11.5rem;
+  margin-top: 11.5em;
 }
 
-.intro-text .head {
+.intro-text .head{
   font-size: 1.6rem;
   line-height: 1.2;
   color: #13183f;
-  font-weight: bolder;
+  font
 }
+
 
 .main-text {
   font-weight: 400; /* Medium */
@@ -114,15 +113,15 @@ body {
 }
 
 .grad-btn1 {
-  width: 10.4rem;
-  height: 3.5rem;
+  width: 10.4em;
+  height: 3.5em;
   border: none;
-  border-radius: 1.8rem;
+  border-radius: 1.8em;
   color: white;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1em;
   padding: 0.6rem 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2.5em;
   background: linear-gradient(to bottom right, #ff6f48, #f02aa6);
 }
 
@@ -135,15 +134,15 @@ body {
     linear-gradient(to bottom right, #ff6f48, #f02aa6);
 }
 
+
 .cc {
   display: grid;
   gap: 50px 25px;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 12rem;
+  margin-top: 12em;
 }
 
-.card,
-.main-left {
+.card, .main-left {
   min-height: 300px;
 }
 
@@ -153,7 +152,7 @@ body {
 }
 
 .main-left h2 {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bolder;
   color: white;
   justify-content: center;
@@ -163,18 +162,18 @@ body {
   border-radius: 12px;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  padding: 2rem;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .icon {
   width: 56px;
   height: 56px;
   margin-bottom: 1.5rem;
-  margin-top: -4rem;
+  margin-top: -4em;
 }
 
 .card h3 {
@@ -187,7 +186,7 @@ body {
   color: #83869a;
   font-size: 1rem;
   flex-grow: 1;
-  font-weight: 500;
+  font-weight: 500;;
 }
 
 .card a {
@@ -203,31 +202,28 @@ body {
 
 .footer {
   background-color: #13183f;
-  margin-top: 5.5rem;
-  width: 100%;
+  margin-top: 5.5em;
 }
 
 .footer ul {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
-  max-width: 75rem;
-  width: 100%;
-  height: 6.5rem;
+  max-width: 75em;
+  width: 80%;
+  height: 7.5em;
   margin: 0 auto;
 }
 
 .footer-btn button {
-  width: 10.4rem;
-  height: 3rem;
+  width: 10.4em;
+  height: 3em;
   border: none;
-  border-radius: 1.8rem;
+  border-radius: 1.8em;
   color: white;
   font-weight: 700;
-  font-size: 1rem;
-  padding: 0.6rem 1.5rem;
+  font-size: 1em;
   background: linear-gradient(to bottom right, #4851ff, #f02aa6);
 }
 
@@ -240,97 +236,23 @@ body {
     linear-gradient(to bottom right, #4851ff, #f02aa6);
 }
 
-.footer-info {
-  padding: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 75rem;
-  width: 80%;
-  margin: 0 auto;
-}
 
-/* === MOBILE PHONES (max-width: 600px) === */
-@media (max-width: 600px) {
-  /* Navbar */
-  .navbar ul,
-  .footer ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  /* Hero Section */
+/* Tablet breakpoint (max-width: 1024px) */
+@media (max-width: 1024px) {
   .hero-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 3rem;
-  }
-
-  .hero-text {
-    margin-top: 1rem;
-    padding: 0 1rem;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
   }
 
   .main-image {
     transform: none;
-    text-align: center;
+    margin-top: 2em;
   }
 
   .img1 {
-    width: 90%;
+    width: 100%;
     transform: none;
-    margin-top: 2rem;
-  }
-
-  .overlay-rectangle {
-    display: none;
-  }
-
-  /* Course Cards */
-  .cc {
-    grid-template-columns: 1fr;
-    margin-top: 4rem;
-  }
-
-  .main-left h2 {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-  }
-
-  /* Footer */
-  .footer ul {
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-}
-
-/* === TABLETS (601px to 992px) === */
-@media (min-width: 601px) and (max-width: 992px) {
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-text {
-    text-align: center;
-    margin-top: 3rem;
-  }
-
-  .img1 {
-    width: 90%;
-    transform: none;
-    margin-top: 2rem;
   }
 
   .overlay-rectangle {
@@ -339,27 +261,50 @@ body {
 
   .cc {
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    gap: 4em;
   }
 
-  .navbar ul,
-  .footer ul {
-    flex-direction: row;
-    justify-content: space-between;
+  .intro-text {
+    margin-top: 5em;
   }
-}
+  }
 
-@media screen and (max-width: 1024px) {
-  .overlay-rectangle {
-    width: 100%;
-    height: 120%;
-    top: -20%;
-    right: -50%;
-    z-index: 1;
+  /* Mobile breakpoint (max-width: 768px) */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .navbar-btn button {
+      width: 100%;
+    }
+
+    .content-container {
+      width: 90%;
+    }
+
+    .intro-text h1 {
+      font-size: 2rem;
+    }
+
+    .intro-text p {
+      font-size: 1rem;
+    }
+
+    .cc {
+      grid-template-columns: 1fr;
+    }
+
+    .footer ul {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1em;
+      height: auto;
+      padding: 2em 0;
+    }
+
+    .footer-btn button {
+      width: 100%;
+    }
   }
-  .img1 {
-    width: 100%;
-    transform: translate(15%, 60px);
-    z-index: 2;
-  }
-}
