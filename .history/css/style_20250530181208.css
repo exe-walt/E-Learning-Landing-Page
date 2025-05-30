@@ -58,7 +58,6 @@ body {
   padding: 0.6rem 1.5rem;
   font-weight: 600;
   font-size: 0.9rem;
-  z-index: 10;
 }
 
 .navbar-btn button:hover{
